@@ -43,6 +43,24 @@ go install github.com/maksmas/monolog@latest
 
 Requires Go 1.26+.
 
+### Shell completion
+
+Monolog includes tab completion for zsh, bash, fish, and PowerShell via `monolog completion <shell>`.
+
+```bash
+# zsh (add to ~/.zshrc)
+source <(monolog completion zsh)
+
+# bash (add to ~/.bashrc)
+source <(monolog completion bash)
+
+# fish (add to ~/.config/fish/config.fish)
+monolog completion fish | source
+
+# PowerShell (add to $PROFILE)
+monolog completion powershell | Out-String | Invoke-Expression
+```
+
 ## Quick start
 
 ```bash
